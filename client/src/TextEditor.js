@@ -23,7 +23,7 @@ export default function TextEditor() {
   const [quill, setQuill] = useState()
 
   useEffect(() => {
-    const s = io("https://google-docs-clone-gold-ten.vercel.app/")
+    const s = io("https://google-docs-clone-gold-ten.vercel.app")
     setSocket(s)
 
     return () => {
