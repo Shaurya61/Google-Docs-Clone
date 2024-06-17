@@ -1,6 +1,9 @@
 const mongoose = require("mongoose")
 const Document = require("./Document")
-
+const dotenv = require('dotenv');
+dotenv.config({
+  path:'./.env'
+});
 mongoose.connect(process.env.MONGODB_URL, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
